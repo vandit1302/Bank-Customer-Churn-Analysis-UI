@@ -2,6 +2,8 @@
 
 This repo contains the code for the UI of the Bank Customer Churn Analysis project. This project was made after keeping in mind the application of predictive analysis in real life and encourage others to not end their projects in python notebooks.
 
+To access the python code for EDA, Data Visualization, ML & DL models, you can visit [this](https://github.com/vandit1302/Bank-Customer-Churn-Analysis-Modelling) repo
+
 ## 💻 Tech Stack used
 * Flask backend
 * HTML
