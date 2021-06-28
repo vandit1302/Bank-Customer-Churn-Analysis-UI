@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Churn Prediction</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="{{ url_for('static',filename='images/icons/favicon.ico') }}" />
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='vendor/bootstrap/css/bootstrap.min.css') }}" >
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='fonts/font-awesome-4.7.0/css/font-awesome.min.css') }}" >
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='vendor/animate/animate.css') }}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='vendor/css-hamburgers/hamburgers.min.css') }}" >
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='vendor/select2/select2.min.css') }}" >
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='css/util.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/main.css') }}" >
+<!--===============================================================================================-->
+</head>
+<body>
+
+	<div class="bg-contact2" style="background-image: url({{ url_for('static',filename='images/bg-01.jpg') }});"> 
+		<div class="container-contact2">
+			<div class="wrap-contact2" style="width:600px;">
+				<form class="contact2-form validate-form" action="">
+					<span class="contact2-form-title">
+						Bank Customer Churn Prediction
+					</span>
+					<!--<div class="wrap-input2 validate-input">
+						<input class="input2" type="file" name="name"> 
+						<span class="focus-input2" data-placeholder="Upload an image"></span>
+					</div>-->
+
+					<div class="wrap-input2 validate-input">
+						<p style="text-align: center;font-size: 22px;">Customer Id : {{custid}}</p>
+						<p style="text-align: center;font-size: 22px;">Customer Name : {{custname}}</p>
+						<p style="text-align: center;font-size: 22px;">Logistic Regression model : {{y_pred_lr}}</p>
+                        <p style="text-align: center;font-size: 22px;">Support Vector Classifier  : {{y_pred_svc}}</p>
+                        <p style="text-align: center;font-size: 22px;">Random Forest Classifier  : {{y_pred_rf}}</p>
+                        <p style="text-align: center;font-size: 22px;">KNN Classifier : {{y_pred_knn}}</p>
+                        <p style="text-align: center;font-size: 22px;">Gaussain Naive Bayes Classifier : {{y_pred_gnb}}</p>
+                        <p style="text-align: center;font-size: 22px;">Gradient Boosting Classifier : {{y_pred_gbc}}</p>
+                        <p style="text-align: center;font-size: 22px;">Artificial Neural Network : {{y_pred_ann}}</p>
+						<span class="focus-input2" ></span>
+					</div>
+
+					<div class="container-contact2-form-btn">
+						<div class="wrap-contact2-form-btn">
+							<div class="contact2-form-bgbtn"></div>
+							<button type="submit" class="contact2-form-btn" formaction = "home">
+								Check Another record
+                            </button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+
+
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-23581568-13');
+	</script>
+
+</body>
+</html>
